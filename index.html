@@ -40,33 +40,21 @@
   <!-- SECTION -->
   <main id="router-view" class="container-fluid">
     <!-- PRIMARY VIEWPORT -->
-    <section class="row">
+    <section class="row justify-content-center">
       GAMENIGHT
     </section>
 
     <section class="row">
       <form onsubmit="app.PlayersController.addPlayer(event)">
-        <div>
+        <div class=" p-5">
           <label for="name">Player Name:</label>
           <input type="text" minlength="2" maxlength="15" name="name" required />
-        </div>
-        <div>
           <button type="submit">Add Player</button>
         </div>
       </form>
     </section>
+
     <section id="players" class="row">
-      <!-- <div class="col-12">
-        <div>
-          <img class="profile-img" src="assets/img/matt.jpg" alt="matt">
-          <p class="p-2">
-            PlayerName
-            <button class="btn btn-danger">-</button>
-            <span>SCORE</span>
-            <button class="btn btn-primary">+</button>
-          </p>
-        </div>
-      </div> -->
     </section>
 
   </main>
