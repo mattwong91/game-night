@@ -15,6 +15,11 @@ export class PlayersController {
     _drawPlayers()
   }
 
+  removePoint(playerName) {
+    playersService.removePoint(playerName)
+    _drawPlayers()
+  }
+
   addPlayer(event) {
     event.preventDefault()
     console.log('form submitted', event);
